@@ -1297,17 +1297,8 @@
 						},
 						"method": "PUT",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"cartItems\": [{\n        \"id\": \"9da3cf2e-5725-4a31-a47d-56db8beb72c1\",\n        \"quantity\": 2,\n        \"price\": 20\n    }]\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:8080/api/orders",
+							"raw": "http://localhost:8080/api/orders?id=c0e0fb8f-fa22-4fa3-8ff1-8b96cd18cfbb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1316,6 +1307,12 @@
 							"path": [
 								"api",
 								"orders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "c0e0fb8f-fa22-4fa3-8ff1-8b96cd18cfbb"
+								}
 							]
 						}
 					},
