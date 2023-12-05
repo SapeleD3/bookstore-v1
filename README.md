@@ -64,7 +64,8 @@ npm run dev
 - Container Awilix - Dependency injections
 - jest - unit testing library
 
-API Documentation
+### API Documentation
+
 The api was documented using POSTMAN,
 import the collection `Bookstore API.postman_collection` in the root directory to postman, and test the endpoints
 
