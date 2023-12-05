@@ -20,6 +20,7 @@ export default class BooksController implements IBookController {
       tag = '',
       price_max = 500,
       price_min = 0,
+      search = '',
     } = req.query as unknown as ListBooksPayload;
 
     try {
@@ -30,6 +31,7 @@ export default class BooksController implements IBookController {
         tag,
         price_max: Number(price_max),
         price_min: Number(price_min),
+        search,
       });
 
       return res.status(StatusCodes.OK).json({

@@ -5,4 +5,5 @@ export type ListBooksPayload = {
   tag?: string;
   price_min?: number;
   price_max?: number;
+  search?: string;
 };

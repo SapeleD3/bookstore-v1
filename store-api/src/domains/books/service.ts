@@ -12,6 +12,7 @@ export default class BooksService {
       price_max = 500,
       price_min = 0,
       tag = '',
+      search = '',
     } = payload;
     const whereQuery: any = {};
 
@@ -26,6 +27,12 @@ export default class BooksService {
       whereQuery['tag'] = {
         hasEvery: JSON.parse(tag),
       };
+    }
+    if (search) {
+      whereQuery['OR'] = [
+        { writer: { contains: search } },
+        { title: { contains: search } },
+      ];
     }
 
     try {
