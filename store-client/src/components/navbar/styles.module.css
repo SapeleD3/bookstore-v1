@@ -1,0 +1,14 @@
+.nav {
+    font-family: 'Forum';
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.nav_active {
+    font-family: 'Forum';
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}

@@ -1,0 +1,12 @@
+.card_wrapper {
+    grid-column: center-start / -1;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    overflow: auto;
+    padding-bottom: 1rem;
+    scrollbar-color: #ecc94b #faf089;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+  }
+  
